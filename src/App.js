@@ -1,9 +1,13 @@
-
-
+import './App.scss'
+import Hero from "./components/hero/Hero";
+import Restaurants from './components/restaurants/Restaurants';
 function App() {
   return (
     <div className="App">
-      <h1>hello Yanal</h1>
+      <div className="sections">
+        <Hero />
+        <Restaurants />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.topbar {
+  width: 100%;
+  height: 8rem;
+
+  // position: fixed;
+  // top: 0;
+  //z-index: 2;
+
+  .wrapper {
+    padding: 4rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      .logo {
+        font-weight: 700;
+        text-decoration: none;
+        color: #ffd60a;
+        font-size: 4rem;
+      }
+    }
+    .right {
+      text-decoration: none;
+      font-size: 3rem;
+      margin-right: 10rem;
+      .about {
+        text-decoration: none;
+        color: #fff;
+      }
+      .Restaurants {
+        margin: 0 7rem;
+        text-decoration: none;
+        color: #fff;
+      }
+      .map {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
