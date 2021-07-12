@@ -9,7 +9,7 @@
     font-size: 4rem;
     margin-top: 2rem;
     em {
-      color: #ffd60a;
+      color: #007cc7;
     }
   }
   em:after {
@@ -17,21 +17,22 @@
     display: block;
     width: 24%;
     margin-left: 76%;
-    border-bottom: 0.5rem solid #ffd60a;
+    border-bottom: 0.5rem solid #007cc7;
     border-radius: 5rem;
   }
   .menu {
     margin-top: 5rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     .menuLeft {
       .search {
         padding: 1rem;
         font-size: 2.5rem;
-        border: 1px solid #ffd60a;
+        border: 1px solid #007cc7;
         border-radius: 2rem;
-        color: #ffd60a;
+        color: #007cc7;
         margin-right: 10rem;
       }
     }
@@ -44,13 +45,65 @@
           font-size: 2.5rem;
           margin-right: 4rem;
           cursor: pointer;
-          border: 1px solid #ffd60a;
+          border: 1px solid #007cc7;
           border-radius: 2rem;
           padding: 1rem;
         }
         .active {
           color: #fff;
-          background-color: #ffd60a;
+          background-color: #007cc7;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+  .restaurantsList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .res {
+      width: 40rem;
+      height: 32.5rem;
+      margin-right: 3rem;
+      margin-bottom: 3rem;
+
+      .Card-res--name {
+        font-size: 2.3rem;
+        font-weight: 900;
+        color: #007cc7;
+      }
+      .Card-res--type {
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-style: italic;
+        color: #ffd60a;
+        margin-top: 1.5rem;
+      }
+      .Card-res--address {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-top: 1rem;
+      }
+      .Card-res--ul {
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .Card-res--list {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #007cc7;
+        }
+        .open {
+          color: #06d6a0;
+        }
+        .close {
+          color: #e4554b;
         }
       }
     }
