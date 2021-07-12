@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/fittery/static/css/main.f3218397.chunk.css",
+    "main.js": "/fittery/static/js/main.36e3dfaa.chunk.js",
+    "main.js.map": "/fittery/static/js/main.36e3dfaa.chunk.js.map",
+    "runtime-main.js": "/fittery/static/js/runtime-main.d7cbc723.js",
+    "runtime-main.js.map": "/fittery/static/js/runtime-main.d7cbc723.js.map",
+    "static/js/2.6a7f43e4.chunk.js": "/fittery/static/js/2.6a7f43e4.chunk.js",
+    "static/js/2.6a7f43e4.chunk.js.map": "/fittery/static/js/2.6a7f43e4.chunk.js.map",
+    "index.html": "/fittery/index.html",
+    "static/css/main.f3218397.chunk.css.map": "/fittery/static/css/main.f3218397.chunk.css.map",
+    "static/js/2.6a7f43e4.chunk.js.LICENSE.txt": "/fittery/static/js/2.6a7f43e4.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/fittery/static/media/background.35de8c4b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7cbc723.js",
+    "static/js/2.6a7f43e4.chunk.js",
+    "static/css/main.f3218397.chunk.css",
+    "static/js/main.36e3dfaa.chunk.js"
+  ]
+}
