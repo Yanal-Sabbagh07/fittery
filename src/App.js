@@ -6,7 +6,7 @@ import RestaurantScreen from './components/restaurant/RestaurantScreen';
 import FetchDataProvider from './context/FetchDataProvider';
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
     
       
