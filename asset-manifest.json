@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/fittery/static/css/main.f3218397.chunk.css",
-    "main.js": "/fittery/static/js/main.36e3dfaa.chunk.js",
-    "main.js.map": "/fittery/static/js/main.36e3dfaa.chunk.js.map",
+    "main.css": "/fittery/static/css/main.d1e81bd4.chunk.css",
+    "main.js": "/fittery/static/js/main.62df7c20.chunk.js",
+    "main.js.map": "/fittery/static/js/main.62df7c20.chunk.js.map",
     "runtime-main.js": "/fittery/static/js/runtime-main.d7cbc723.js",
     "runtime-main.js.map": "/fittery/static/js/runtime-main.d7cbc723.js.map",
-    "static/js/2.6a7f43e4.chunk.js": "/fittery/static/js/2.6a7f43e4.chunk.js",
-    "static/js/2.6a7f43e4.chunk.js.map": "/fittery/static/js/2.6a7f43e4.chunk.js.map",
+    "static/js/2.2cad8b45.chunk.js": "/fittery/static/js/2.2cad8b45.chunk.js",
+    "static/js/2.2cad8b45.chunk.js.map": "/fittery/static/js/2.2cad8b45.chunk.js.map",
     "index.html": "/fittery/index.html",
-    "static/css/main.f3218397.chunk.css.map": "/fittery/static/css/main.f3218397.chunk.css.map",
-    "static/js/2.6a7f43e4.chunk.js.LICENSE.txt": "/fittery/static/js/2.6a7f43e4.chunk.js.LICENSE.txt",
-    "static/media/Hero.scss": "/fittery/static/media/background.35de8c4b.jpg"
+    "static/css/main.d1e81bd4.chunk.css.map": "/fittery/static/css/main.d1e81bd4.chunk.css.map",
+    "static/js/2.2cad8b45.chunk.js.LICENSE.txt": "/fittery/static/js/2.2cad8b45.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/fittery/static/media/background.bd172d25.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d7cbc723.js",
-    "static/js/2.6a7f43e4.chunk.js",
-    "static/css/main.f3218397.chunk.css",
-    "static/js/main.36e3dfaa.chunk.js"
+    "static/js/2.2cad8b45.chunk.js",
+    "static/css/main.d1e81bd4.chunk.css",
+    "static/js/main.62df7c20.chunk.js"
   ]
 }
