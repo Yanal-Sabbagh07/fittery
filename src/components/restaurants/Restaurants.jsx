@@ -29,7 +29,7 @@ export default function Restaurants() {
                     <div className="menuRight">
                         <ul>
                             <li className={catSelected === 0 ? "active" : ""} onClick={handleClick} value={0}>All</li>
-                            <li className={catSelected === 1 ? "active" : ""} onClick={handleClick} value={1}>OPEN</li>
+                            <li className={catSelected === 1 ? "active" : ""} onClick={handleClick} value={1}>Open</li>
                             <li className={catSelected === 2 ? "active" : ""} onClick={handleClick} value={2}>Delivery</li>
                             <li className={catSelected === 3 ? "active" : ""} onClick={handleClick} value={3}>Pickup</li>
                         </ul>

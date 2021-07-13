@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import ResCard from './ResCard';
 export default function RenderRestaurants(props) {
     const restaurants = props.restaurants;
@@ -7,6 +8,13 @@ export default function RenderRestaurants(props) {
             {restaurants.map((restaurant)=>{
                 return(
                     <div className="res" key={restaurant.id}>
+                    <Link
+                        className='react-router__link'
+                        to={`/restaurants/${restaurant.id}`}
+                        style={{
+                        textDecoration: 'none',
+                        }}
+                    >
                         <ResCard
                             img={restaurant.photos[0].links[0]}
                             name={restaurant.name}
@@ -19,6 +27,7 @@ export default function RenderRestaurants(props) {
                             openHour={restaurant.opening_hours.hours.open}
                             closeHour={restaurant.opening_hours.hours.close}
                         />
+                        </Link>
                     </div>
                 );
             })}

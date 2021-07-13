@@ -1,4 +1,5 @@
 import './Topbar.scss';
+import { Link } from 'react-router-dom';
 
 export default function Topbar() {
     return (
@@ -8,9 +9,18 @@ export default function Topbar() {
                    <a href="#" className="logo">fittery</a> 
                 </div>
                 <div className="right">
-                    <a href ="#" className="about">About</a>
-                    <a href ="#" className="Restaurants">Restaurants</a>
-                    <a href ="#" className="map">Map</a>
+                    <Link
+                        
+                        to={`/restaurants`}
+                        style={{
+                        textDecoration: 'none',
+                        }}
+                    >
+                    
+                    <a href ="#" className="Restaurants">Our Restaurants</a>
+                    </Link>
+
+                    <a href ="#" className="map">Restaurants Location</a>
                     
                 </div>
             </div>
