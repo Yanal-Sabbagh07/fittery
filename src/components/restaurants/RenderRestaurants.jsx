@@ -3,9 +3,16 @@ import { Link } from 'react-router-dom';
 import ResCard from './ResCard';
 export default function RenderRestaurants(props) {
     const restaurants = props.restaurants;
+    const search = props.searchValue;
     return (
         <div className="restaurantsList">
-            {restaurants.map((restaurant)=>{
+            {restaurants.filter((val) => {
+                if (search === '') {
+                    return val;
+                } else if (val.name.toLowerCase().includes(search.toLowerCase()) || val.cuisine.includes(search.toLowerCase())) {
+                    return val;
+            }
+            }).map((restaurant)=>{
                 return(
                     <div className="res" key={restaurant.id}>
                     <Link

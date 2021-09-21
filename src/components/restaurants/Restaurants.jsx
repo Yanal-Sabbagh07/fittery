@@ -1,37 +1,47 @@
+import MenuList from './MenuList';
 import { useContext, useState } from 'react';
 import { FetchDataContext } from '../../context/FetchDataProvider';
 import RenderRestaurants from './RenderRestaurants';
 
 import './Restaurants.scss';
+import Topbar from '../topbar/Topbar';
 
 export default function Restaurants() {
     const restaurants = useContext(FetchDataContext);
+    const Menu = ["All","Open","Delivery","Pickup"];
     const [catSelected,setCatSelected]= useState(0);
-    const handleClick = (event)=>{
+    const [search, setSearch] = useState('');
+    const handleChange = (event =>{
         const value = event.target.value;
+        setSearch(value);
+    })
+    const handleClick = (id)=>{
+        
         return(
-            setCatSelected(value)
+            setCatSelected(id)
         );
     }
     if(restaurants !== undefined){
+        const menu = ["All","Open", "Delivery","Pickup"];
         const all = restaurants;
         const open = restaurants.filter(res => res.opening_hours.open_now === true);
         const pickup = restaurants.filter(res => res.pickup === true);
         const delivery = restaurants.filter(res => res.delivery === true);
         return (
+           
             <div className="restaurants">
-            <h1>Our Restaurants in <em>Berlin</em></h1>
+            
+            <Topbar/>
+            
+            {/* <h1>Our Restaurants in <em>Berlin</em></h1> */}
             <div className = "menu">
                     <div className="menuLeft">
-                    <input id="input" className="search" name='searchBar'  placeholder='Search by name / type'></input>
+                    <input id="input" className="search" name='searchBar'  placeholder='Search by name / type' onChange={handleChange} value={search}></input>
                     </div>
 
                     <div className="menuRight">
                         <ul>
-                            <li className={catSelected === 0 ? "active" : ""} onClick={handleClick} value={0}>All</li>
-                            <li className={catSelected === 1 ? "active" : ""} onClick={handleClick} value={1}>Open</li>
-                            <li className={catSelected === 2 ? "active" : ""} onClick={handleClick} value={2}>Delivery</li>
-                            <li className={catSelected === 3 ? "active" : ""} onClick={handleClick} value={3}>Pickup</li>
+                            {menu.map((item,index)=><MenuList key={index} item={item} id={index} onChecked={handleClick} active={catSelected === index}></MenuList>)}
                         </ul>
                     </div>
                     
@@ -39,6 +49,7 @@ export default function Restaurants() {
             </div>
             <RenderRestaurants 
                 restaurants={catSelected === 0 ? all : catSelected === 1 ? open : catSelected === 2 ? delivery : pickup}
+                searchValue = {search}
             />
 
             </div>
