@@ -7,36 +7,37 @@
   //z-index: 2;
 
   .wrapper {
-    padding: 4rem 4rem;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    color: #f2f2f2;
+    font-size: 2.4rem;
     .left {
+      margin-left: 5rem;
       .logo {
-        font-weight: 700;
-        text-decoration: none;
-        color: #007cc7;
-        font-size: 2.5rem;
+        height: 7rem;
+        width: 14rem;
       }
     }
     .right {
+      flex: 0.6;
+      display: flex;
+      justify-content: space-evenly;
+      cursor: pointer;
       text-decoration: none;
-      font-size: 1.5rem;
-      font-weight: 700;
-      //margin-right: 4rem;
-      .about {
+
+      .home {
         text-decoration: none;
-        color: #007cc7;
+        color: #22c55e;
       }
       .Restaurants {
-        margin: 0 7rem;
+        color: #f2f2f2;
         text-decoration: none;
-        color: #007cc7;
       }
       .map {
+        color: #f2f2f2;
         text-decoration: none;
-        color: #007cc7;
       }
     }
   }

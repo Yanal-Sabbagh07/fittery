@@ -48,11 +48,60 @@
   background: none;
   border: none;
   cursor: pointer;
-  background-image: none;
 
   img {
-    width: 30px;
-    height: 30px;
-    background-image: none;
+    width: 40px;
+    height: 40px;
   }
+}
+
+.mapboxgl-popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 325px;
+  height: 325px;
+  background-color: #f2f2f2 !important;
+}
+
+/* Move the content above the :before element so rotated rectangle doesn't cover content */
+.mapboxgl-popup-content div {
+  position: relative;
+  z-index: 5;
+  background-color: #ccc;
+}
+
+/* This is the new tip */
+.mapboxgl-popup-content:before {
+  content: "";
+  position: absolute;
+  /* I've found 9px looks better than 10px */
+  top: -webkit-calc(100% - 9px);
+  top: calc(100% - 9px);
+  left: calc(50% - 10px);
+  height: 20px;
+  width: 20px;
+  background: #ccc;
+  transform: rotate(45deg);
+  border-bottom: inherit;
+  border-right: inherit;
+  /* The shadow is translated down a bit so it doesn't show inside the pop-up */
+  box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+}
+
+/* Since the new tip is absolutely-positioned, it doesn't force the rectangle up on its own */
+.mapboxgl-popup {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.mapboxgl-popup-close-button {
+  font-size: 28px;
+  font-family: Tahoma, Verdana, sans-serif;
+  color: red;
+  font-weight: bold;
+}
+/* Hide the old tip */
+.mapboxgl-popup-tip {
+  display: block;
 }
