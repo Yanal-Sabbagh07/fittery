@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/food.jpg);
+    url(./images/background.jpg);
 
   background-size: cover;
   background-position: center;
@@ -9,13 +9,24 @@
   .txt {
     font-size: 3.4rem;
     color: #fff;
-    margin-left: 3rem;
+    margin-left: 5rem;
     margin-top: 18rem;
     h1 {
       font-weight: 300;
     }
   }
   em {
-    color: #22c55e;
+    color: #de8b18;
+  }
+}
+
+@media (max-width: 40em) {
+  .hero {
+    .txt {
+      font-size: 1.4rem;
+      margin-left: 1.5rem;
+      margin-top: 17rem;
+      line-height: 6rem;
+    }
   }
 }

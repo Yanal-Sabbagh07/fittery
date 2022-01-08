@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   //align-items: center;
-  background-color: #282828;
-
+  background-color: #f2f2f2;
   h1 {
     color: #000;
     font-size: 4rem;
@@ -28,30 +27,31 @@
     justify-content: center;
     margin-top: 5rem;
     width: 100%;
-    background-color: #000;
 
     .res {
-      width: 39rem;
+      width: 38rem;
       height: 32.5rem;
-      background-color: black !important;
 
       // margin-right: 3rem;
-      // margin-bottom: 3rem;
+      margin-bottom: 5rem !important;
       margin: 2.5rem;
+      .react-router__link {
+        border-radius: 10px;
+      }
       .Card-res--name {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         font-weight: 900;
-        color: #007cc7;
+        color: #555;
       }
       .Card-res--type {
         font-size: 1.8rem;
-        font-weight: 400;
+        font-weight: 600;
         font-style: italic;
-        color: #ffd60a;
+        color: #007cc7;
         margin-top: 1.5rem;
       }
       .Card-res--address {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 800;
         margin-top: 1rem;
       }

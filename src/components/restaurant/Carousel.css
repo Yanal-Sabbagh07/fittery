@@ -15,11 +15,13 @@
 }
 
 .carousel__img {
-  min-width: 600px;
+  min-width: 75vw;
   height: 400px;
   object-fit: cover;
+  background-size: cover;
+  background-position: center;
   border-radius: 2px;
-  animation: slidein 0.2s ease-in;
+  animation: slidein 5s ease-in;
   scroll-behavior: smooth;
 }
 
@@ -29,5 +31,5 @@
 }
 
 .carousel__arrow:hover {
-  transform: scale(1.12);
+  transform: scale(2.12);
 }

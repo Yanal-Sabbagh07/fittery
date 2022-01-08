@@ -1,25 +1,24 @@
 .filter-wrapper {
-  margin-top: 10rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   .search-filter {
-    display: inline-block;
     position: relative;
 
+    width: 48vw;
     .search-input {
-      margin-left: 4rem;
+      margin-left: 5rem;
       font-size: 2rem;
-
-      border: 1px solid #007cc7;
+      border: 1px solid #de8b18;
       border-radius: 1rem;
-      color: #007cc7;
-      margin-right: 10rem;
-      width: 35rem;
-      height: 4rem;
-      padding-left: 1rem;
+      color: #de8b18;
+
+      width: 80%;
+      height: 5rem;
+      padding-left: 5rem;
 
       &:focus {
         outline: none;
@@ -27,22 +26,31 @@
     }
   }
   .buttons-filter {
+    width: 50vw;
+    height: 5rem;
+
     ul {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
       list-style: none;
       padding-left: 0;
 
       li {
+        text-align: CENTER;
+        width: 10rem;
+        height: 5rem;
         font-size: 1.8rem;
-        margin-right: 4rem;
+        margin-right: 6rem;
         cursor: pointer;
-        border: 1px solid #007cc7;
+        border: 1px solid #de8b18;
         border-radius: 1.5rem;
         padding: 1rem;
+        background-color: #f2f2f2;
       }
       .active {
         color: #fff;
-        background-color: #007cc7;
+        background-color: #de8b18;
         transition: all 0.5s ease;
       }
     }
