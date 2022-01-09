@@ -1,0 +1,116 @@
+.loading {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    justify-self: center;
+  }
+}
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  //align-items: center;
+  background-color: #f2f2f2;
+  h1 {
+    color: #000;
+    font-size: 4rem;
+    margin-top: 2rem;
+    em {
+      color: #007cc7;
+    }
+  }
+  em:after {
+    content: "";
+    display: block;
+    width: 24%;
+    margin-left: 76%;
+    border-bottom: 0.5rem solid #007cc7;
+    border-radius: 5rem;
+  }
+  .restaurantsList-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .restaurantsList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2.5rem;
+      width: 100%;
+
+      .res {
+        width: 38rem;
+        height: 32.5rem;
+
+        // margin-right: 3rem;
+        margin-bottom: 5rem !important;
+        margin: 2.5rem;
+        .react-router__link {
+          border-radius: 10px;
+        }
+        .Card-res--name {
+          font-size: 2.1rem;
+          font-weight: 900;
+          color: #555;
+        }
+        .Card-res--type {
+          font-size: 1.8rem;
+          font-weight: 600;
+          font-style: italic;
+          color: #007cc7;
+          margin-top: 1.5rem;
+        }
+        .Card-res--address {
+          font-size: 1rem;
+          font-weight: 800;
+          margin-top: 1rem;
+        }
+        .Card-res--ul {
+          list-style: none;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-top: 1rem;
+
+          .Card-res--list {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #007cc7;
+          }
+          .open {
+            color: #06d6a0;
+          }
+          .close {
+            color: #e4554b;
+            .open {
+              margin-left: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+    .pagination {
+      width: 50vw;
+      .pagination-ul {
+        display: flex;
+        font-size: 1.8rem;
+        align-items: center;
+        justify-content: center;
+        .page-item {
+          list-style: none;
+          margin-left: 1rem;
+          .page-link {
+            text-decoration: none;
+            border: 1px solid #ccc;
+            padding: 0.5rem 1rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

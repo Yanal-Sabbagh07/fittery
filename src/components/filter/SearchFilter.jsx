@@ -13,8 +13,8 @@ const SearchFilter = () => {
       <SearchIcon
         style={{
           position: "absolute",
-          right: 105,
-          top: 8,
+          right: 85,
+          top: 10,
           width: 30,
           height: 30,
         }}
@@ -23,7 +23,7 @@ const SearchFilter = () => {
         id="input"
         className="search-input"
         name="searchBar"
-        placeholder="Search by name / type"
+        placeholder="Search by Name / Cuisine "
         onChange={handleChange}
         value={search}
       ></input>

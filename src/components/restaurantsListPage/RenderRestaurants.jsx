@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Pagination from "./Pagination";
 import ResCard from "./ResCard";
+
 export default function RenderRestaurants(props) {
   const restaurants = props.restaurants;
-  const search = props.searchValue;
+  console.log("props comming:" + restaurants);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [resPerPage] = useState(3);
+  // get current restaurants
+  const indexOfLastRes = currentPage * resPerPage;
+  const indexOfFirstRes = indexOfLastRes - resPerPage;
+  const currentRes = restaurants.slice(indexOfFirstRes, indexOfLastRes);
+
+  //change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
-    <div className="restaurantsList">
-      {restaurants
-        .filter((val) => {
-          if (search === "") {
-            return val;
-          } else if (
-            val.name.toLowerCase().includes(search.toLowerCase()) ||
-            val.cuisine.includes(search.toLowerCase())
-          ) {
-            return val;
-          }
-        })
-        .map((restaurant) => {
+    <div className="restaurantsList-container">
+      <div className="restaurantsList">
+        {currentRes.map((restaurant) => {
           return (
             <div className="res" key={restaurant.id}>
               <Link
@@ -43,6 +44,14 @@ export default function RenderRestaurants(props) {
             </div>
           );
         })}
+      </div>
+      <div className="pagination">
+        <Pagination
+          resPerPage={resPerPage}
+          totalRes={restaurants.length}
+          paginate={paginate}
+        />
+      </div>
     </div>
   );
 }

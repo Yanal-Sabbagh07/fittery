@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 import Hero from "./components/hero/Hero";
-import Restaurants from "./components/restaurants/Restaurants";
+import Restaurants from "./components/restaurantsListPage/Restaurants";
 import Map from "./components/map/Map";
 import RestaurantScreen from "./components/restaurant/RestaurantScreen";
 import FetchDataProvider from "./context/FetchDataProvider";
