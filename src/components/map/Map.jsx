@@ -37,12 +37,12 @@ function Map() {
         <ReactMapGl
           {...viewPort}
           mapboxApiAccessToken={
-            "pk.eyJ1IjoieWFubzBvIiwiYSI6ImNrcHBuN2U0MzA5Y28ydnF6NHh2OXYyODQifQ.8rZb8cDgvvYHh9CM6vy9XA"
+            "pk.eyJ1IjoieWFubzBvIiwiYSI6ImNreThxc3ZyaTFpaDEyd29qczdsenJyanAifQ.KZjNHiRtIIlXOLk9TXecpw"
           }
           onViewportChange={(viewport) => {
             setViewPort(viewport);
           }}
-          mapStyle={"mapbox://styles/mapbox/streets-v11"}
+          mapStyle={"mapbox://styles/mapbox/navigation-day-v1"}
         >
           <Topbar />
           <FiltersWrapper />

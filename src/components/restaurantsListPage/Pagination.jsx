@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Pagination = (props) => {
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(props.totalRes / props.resPerPage); i++) {
@@ -13,13 +13,13 @@ const Pagination = (props) => {
       <ul className="pagination-ul">
         {pageNumbers.map((number) => (
           <li key={number} className="page-item">
-            <a
-              href="#"
+            <Link
+              to={`/restaurants/`}
               className="page-link"
               onClick={() => props.paginate(number)}
             >
               {number}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
