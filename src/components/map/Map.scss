@@ -50,8 +50,8 @@
   cursor: pointer;
 
   img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -59,8 +59,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width: 325px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: transparent !important;
 }
 
@@ -99,7 +99,7 @@
 .mapboxgl-popup-close-button {
   font-size: 28px;
   text-align: center;
-  margin-right: 15rem;
+  margin-right: 11rem;
   font-family: Tahoma, Verdana, sans-serif;
   color: red;
   font-weight: bold;

@@ -15,8 +15,8 @@
 }
 
 .carousel__img {
-  min-width: 75vw;
-  height: 400px;
+  min-width: 90vw;
+  height: 100vh;
   object-fit: cover;
   background-size: cover;
   background-position: center;

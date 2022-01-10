@@ -37,7 +37,7 @@ function Map() {
         <ReactMapGl
           {...viewPort}
           mapboxApiAccessToken={
-            "pk.eyJ1IjoieWFubzBvIiwiYSI6ImNreThxc3ZyaTFpaDEyd29qczdsenJyanAifQ.KZjNHiRtIIlXOLk9TXecpw"
+            "pk.eyJ1IjoieWFubzBvIiwiYSI6ImNrcHBuOGUzZzA4emwyb2s5bnQzcXlqZGwifQ.YmQYqPOConw4U5-GqUEdtA"
           }
           onViewportChange={(viewport) => {
             setViewPort(viewport);
