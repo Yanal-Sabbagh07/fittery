@@ -10,7 +10,7 @@ import "./Restaurants.scss";
 import Topbar from "../topbar/Topbar";
 import FiltersWrapper from "../filter/FiltersWrapper";
 
-export default function Restaurants() {
+export default function Restaurants(props) {
   const restaurants = useContext(FetchDataContext);
 
   const [catSelected] = useContext(FilterButtonsContext);
@@ -68,7 +68,7 @@ export default function Restaurants() {
 
     return (
       <div className="restaurants">
-        <Topbar />
+        <Topbar page={props.page} setPage={props.setPage} />
         <FiltersWrapper />
         <RenderRestaurants
           restaurants={

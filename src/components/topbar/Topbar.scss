@@ -26,7 +26,7 @@
 
       .home {
         text-decoration: none;
-        color: #de8b18;
+        color: #f2f2f2;
       }
       .Restaurants {
         color: #f2f2f2;
@@ -36,8 +36,14 @@
         color: #f2f2f2;
         text-decoration: none;
       }
+      .active {
+        color: #de8b18;
+      }
     }
   }
+}
+.transparent {
+  background-color: transparent;
 }
 
 @media (max-width: 40em) {

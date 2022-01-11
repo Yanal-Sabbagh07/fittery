@@ -8,11 +8,11 @@ import Typography from "@material-ui/core/Typography";
 import ReactStars from "react-rating-stars-component";
 const useStyles = makeStyles({
   root: {
-    width: 220,
-    maxHeight: 200,
+    width: 250,
+    maxHeight: 250,
   },
   media: {
-    height: 100,
+    height: 75,
   },
 });
 
@@ -20,14 +20,14 @@ function MapCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} card-on-map>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={props.img}
           title="Contemplative Reptile"
         />
-        <CardContent>
+        <CardContent className="card-content">
           <Typography gutterBottom variant="h6" component="h6">
             <div className="Card-map--name">{props.name}</div>
           </Typography>

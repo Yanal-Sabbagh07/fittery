@@ -11,8 +11,9 @@ import Topbar from "../topbar/Topbar";
 
 import FiltersWrapper from "../filter/FiltersWrapper";
 import RenderResOnMap from "./RenderResOnMap";
+import { PinDropSharp } from "@material-ui/icons";
 
-function Map() {
+function Map(props) {
   const restaurants = useContext(FetchDataContext);
   const [catSelected] = useContext(FilterButtonsContext);
   const [search, setSearch] = useContext(FilterSearchContext);
@@ -20,8 +21,8 @@ function Map() {
   const [viewPort, setViewPort] = useState({
     latitude: 52.5158,
     longitude: 13.454,
-    width: "100vw",
-    height: "100vh",
+    width: "100%",
+    height: "87vh",
     zoom: 11,
   });
 
@@ -34,6 +35,7 @@ function Map() {
     const delivery = restaurants.filter((res) => res.delivery === true);
     return (
       <div>
+        <Topbar page={props.page} setPage={props.setPage} />
         <ReactMapGl
           {...viewPort}
           mapboxApiAccessToken={
@@ -44,7 +46,6 @@ function Map() {
           }}
           mapStyle={"mapbox://styles/mapbox/navigation-day-v1"}
         >
-          <Topbar />
           <FiltersWrapper />
           <RenderResOnMap
             restaurants={
