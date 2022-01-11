@@ -11,6 +11,7 @@ const SearchFilter = () => {
   return (
     <div className="search-filter">
       <SearchIcon
+        className="search-icon"
         style={{
           position: "absolute",
           right: 85,
