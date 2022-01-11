@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fittery/static/css/main.239dd10a.chunk.css",
-    "main.js": "/fittery/static/js/main.5308ad59.chunk.js",
-    "main.js.map": "/fittery/static/js/main.5308ad59.chunk.js.map",
+    "main.css": "/fittery/static/css/main.eeb899e4.chunk.css",
+    "main.js": "/fittery/static/js/main.f6014221.chunk.js",
+    "main.js.map": "/fittery/static/js/main.f6014221.chunk.js.map",
     "runtime-main.js": "/fittery/static/js/runtime-main.d7cbc723.js",
     "runtime-main.js.map": "/fittery/static/js/runtime-main.d7cbc723.js.map",
     "static/js/2.1cb3c286.chunk.js": "/fittery/static/js/2.1cb3c286.chunk.js",
     "static/js/2.1cb3c286.chunk.js.map": "/fittery/static/js/2.1cb3c286.chunk.js.map",
     "index.html": "/fittery/index.html",
-    "static/css/main.239dd10a.chunk.css.map": "/fittery/static/css/main.239dd10a.chunk.css.map",
+    "static/css/main.eeb899e4.chunk.css.map": "/fittery/static/css/main.eeb899e4.chunk.css.map",
     "static/js/2.1cb3c286.chunk.js.LICENSE.txt": "/fittery/static/js/2.1cb3c286.chunk.js.LICENSE.txt",
     "static/media/Hero.scss": "/fittery/static/media/background.f00ed9ea.jpg",
     "static/media/logo.b71ba4e3.png": "/fittery/static/media/logo.b71ba4e3.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.d7cbc723.js",
     "static/js/2.1cb3c286.chunk.js",
-    "static/css/main.239dd10a.chunk.css",
-    "static/js/main.5308ad59.chunk.js"
+    "static/css/main.eeb899e4.chunk.css",
+    "static/js/main.f6014221.chunk.js"
   ]
 }
